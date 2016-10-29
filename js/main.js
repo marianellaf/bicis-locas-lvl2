@@ -30,16 +30,6 @@ function validateForm(){
 			return span;
 		}
 	}
-
-	if(apellido == null || apellido.length == 0 || /^\s+$/.test(apellido)) {
-		var span = document.createElement("span");
-		var referencia= document.getElementById("lastname");
-		var padre=referencia.parentNode;
-		padre.insertBefore(span,referencia);
-		var texto = document.createTextNode("Debe ingresar su apellido");
-		span.appendChild(texto);
-		return span;
-	}
 	if(apellido == null || apellido.length == 0 || /^\s+$/.test(apellido)) {
 		var span = document.createElement("span");
 		var referencia= document.getElementById("lastname");
